@@ -58,6 +58,6 @@ jobs:
           push: true
           tags: ghcr.io/${{ github.actor }}/back-calculadora:latest
           labels: |
-           org.opencontainers.image.source=https://github.com/${{ github.repository_owner }}/${{ github.repository }}
+           org.opencontainers.image.source=https://github.com/${{ github.repository }}
            org.opencontainers.image.description=Back-end Calculadora Template
            org.opencontainers.image.licenses=MIT
