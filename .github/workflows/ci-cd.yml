@@ -56,4 +56,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/back-calculadora-template:latest
+          tags: ghcr.io/${{ github.actor }}/back-calculadora:latest
+          labels: |
+           org.opencontainers.image.source=https://github.com/${{ github.repository_owner }}/${{ github.repository }}
+           org.opencontainers.image.description=Back-end Calculadora Template
+           org.opencontainers.image.licenses=MIT
